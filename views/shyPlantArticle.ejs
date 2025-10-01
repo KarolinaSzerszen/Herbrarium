@@ -1,0 +1,77 @@
+
+<%- include("partials/header.ejs") %>
+<div class="article_container">
+   <div class="inside_img_container">
+         <img class="inside_img" src="/images/shameplant.jpg" alt="nettle plant">
+    </div>
+    <div class="inside_content_container">
+
+      
+        <h2>Did You Know That Plants Can Be Shy?</h2>
+        <p>12.11.2024 Ben Urich</p>
+    
+        <p>Most people think of plants as passive, unmoving organisms, but some species have fascinating ways of reacting to their environment. One of the most intriguing examples is the shameplant (Mimosa pudica), also known as the sensitive plant, touch-me-not, or humble plant. This unique plant exhibits a rare behavior that almost seems like shyness—it folds its leaves in response to to </p>
+    
+
+        <h3>The Science Behind the Shy Plant</h3>
+
+        <p>Mimosa pudica is native to Central and South America but is now found in tropical and subtropical regions worldwide. The plant’s leaves are highly sensitive and collapse inward when touched, giving the impression of a timid response. This movement is a defense mechanism known as thigmonasty—a reaction to physical stimuli.
+
+         The process is driven by changes in turgor pressure within the plant's cells. When stimulated, the cells at the base of the leaflets release water, causing the leaves to lose stiffness and fold. This movement happens within seconds and can be triggered by:</p>
+        <ul>
+         <li>A light touch</li>
+         <li>Vibrations</li>
+         <li>Wind</li>
+         <li>Sudden temperature changes</li>
+        </ul>
+        <h3>Why Does the Shameplant React This Way?</h3>
+        <p>Scientists believe this unique response evolved as a survival strategy. The rapid movement may startle herbivores, making the plant appear less appetizing. Additionally, folding its leaves may reduce water loss and protect it from environmental stressors like heavy rain or strong winds.</p>
+        <h3>Other Amazing Features of Mimosa pudica</h3>
+        <p>Beyond its shyness, the shameplant has other interesting qualities:</p>
+        <ul>
+         <li>It exhibits nyctinasty, meaning it closes its leaves at night and reopens them in the morning.</li>
+         <li>It contains medicinal properties and has been traditionally used in herbal remedies./li>
+         <li>Wind</li>
+         <li>Sudden temperature changes</li>
+        </ul>
+
+        <h3>Conclusion</h3>
+
+        <p>The sting of nettles may be painful, but with the right precautions and remedies, you can minimize or even avoid discomfort entirely. 
+            By recognizing the plant, handling it carefully, and using natural treatments, you can confidently enjoy nature without fear of nettle stings.</p>
+
+        
+</div>            
+            <div class="comment_container">
+             
+                <div>
+                    <p>Comment as a Guest</p>
+                    <textarea rows="2" cols="25" class="comment_textarea" type="text" name="Fill" placeholder="BANANA"></textarea>
+                    <button>Comment</button>
+                </div>
+    
+                <div class="comments">
+                    <% if (locals.comment) { %>
+                        <div>
+                            <h3>Guest</h3>
+                            <p><%= comment %></p>
+                        </div>
+                    <% } else { } %>
+                    <div>
+                        <h3>User23232</h3>
+                        <p>Wow I never suspected that. That's fascinating</p>
+                    </div>
+                    <div>
+                        <h3>User5463565</h3>
+                        <p>Who would have known, your really DO learn new things every day.</p>
+                    </div>
+                    <div>
+                        <h3>User9970</h3>
+                        <p>If only I had known it when I was a child</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+
+<%- include("partials/footer.ejs") %>

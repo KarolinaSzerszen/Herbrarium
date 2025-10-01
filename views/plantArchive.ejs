@@ -1,0 +1,46 @@
+<%- include("partials/header.ejs") %>
+
+<div class="plant_archive_container">
+    <img class="plant_archive_img" src="/images/plant_archive_hyacinthus.jpg" alt="yellow flower on blue background">
+    <h2 class="Title">Plant archive</h2>
+</div>
+<%#TESTING                            TAGS                                TESTING 
+<div class="tag_container">
+    <button class="options" data-tag="all">all plants</button>
+    <button class="options" data-tag="group_1">edible plants</button>
+    <button class="options" data-tag="group_2">IDK yet</button>
+</div>
+TESTING                            TAGS                                TESTING #%>
+
+<h2 class="filters">Filter Content Using Buttons</h2>
+ <!-- Buttons as Links -->
+<div class="tag_container">
+ <form method="GET" action="/plantArchive">
+    <input type="hidden" name="list" value="one">
+    <button type="submit" class="plant_tag <%=selectedList %> <%= selectedList === 'one' ? 'active' : '' %> " >Show all plants</button>
+</form>
+
+<form class="plant_tag" method="GET" action="/plantArchive">
+    <input type="hidden" name="list" value="two">
+    <button type="submit" class="plant_tag <%=selectedList %> <%= selectedList === 'two' ? 'active' : '' %>" >Show only edible plants</button>
+</form>
+</div>
+
+
+<div class ="card_container " >
+    <% data.forEach(function(plant) { %>
+    <div class="card">
+        <div class = "plant_img_container" >
+        <img class="plant_img" src = "<%=plant.image_url %>" alt="plant_photo">
+    </div>
+        <div class="plant_info">
+            <h3><%=plant.common_name %></h3>
+            <p><%=plant.scientific_name %></p>
+    
+        </div>
+    </div>
+    <% })%>
+</div>
+
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,77 @@
+<%- include("partials/header.ejs") %>
+<div class="article_container">
+   <div class="inside_img_container">
+         <img class="inside_img" src="/images/nettle_article.jpg" alt="nettle plant">
+    </div>
+    <div class="inside_content_container">
+        <h2>The secret of avoiding pain</h2>
+        <p>36.12.2024 Betty Brant</p>
+    
+        <p>As we all know nettle is a very usefull plant. Although it's properties are amazing, harvesting it can be quite an issue.
+         All of us who have  ever had contact with nettles whether as a child playing in a garden or as an adult gathering herbs can say withouth hestiance that nettles sting.
+         But did you know there are simple ways to avoid and even neutralize the pain of nettle stings? Here, we explore the science behind their sting and the best methods to prevent and treat it. </p>
+    
+
+        <h3>Why Do Nettles Sting?</h3>
+
+        <p>Nettles are covered in tiny, hair-like structures called trichomes. These trichomes act like miniature needles, 
+        injecting a mix of histamine, formic acid, and other irritants into the skin upon contact. This results in an immediate burning sensation, redness, and itching.</p>
+        <h3>How to Avoid the Sting</h3>
+        <ol>
+            <li>Wear Protective Clothing The simplest way to avoid nettle pain is by covering exposed skin. Long sleeves, pants, and gloves create a physical barrier between your skin and the plant's stinging hairs.</li>
+            <li>Touch Them the Right Way If you must handle nettles, touch them with a firm, upward motion. The trichomes are angled downward, so brushing them from below reduces the risk of breaking the hairs and releasing irritants.</li>
+            <li>Recognize and Avoid Learning to identify nettles helps you steer clear of them. Look for their serrated leaves and slightly hairy stems, which give them a distinctive appearance.</li>
+        </ol>
+        <h3>Remedies for Nettle Stings</h3>
+        <p>If you do get stung, don't worry—relief is at hand. Here are some effective treatments:</p>
+        <ol>
+            <li>Avoid Scratching - Rubbing or scratching the sting can push the irritants deeper into the skin, prolonging discomfort.</li>
+            <li>Wash the Area - Use cold water and mild soap to remove any remaining nettle hairs and irritants.</li>
+            <li>Dock Leaves - A well-known traditional remedy involves rubbing dock leaves (Rumex spp.) on the sting. While scientific evidence is limited, many people swear by its soothing effect.</li>
+            <li>Baking Soda Paste - Mix baking soda with a little water and apply it to the affected area. This helps neutralize the sting and reduce irritation.</li>
+            <li>Aloe Vera or Vinegar - These natural remedies can cool the skin and reduce inflammation.</li>
+        </ol>
+
+        <h3>Conclusion</h3>
+
+        <p>The sting of nettles may be painful, but with the right precautions and remedies, you can minimize or even avoid discomfort entirely. 
+            By recognizing the plant, handling it carefully, and using natural treatments, you can confidently enjoy nature without fear of nettle stings.</p>
+
+</div>
+            <div class="comment_container">
+             
+                <div class="leave_a_comment">
+                    <p>Comment as a Guest</p>
+                    <form method="post" action="/nettleArticle/comment">
+                    <textarea rows="2" cols="25" class="comment_textarea" type="text" name="Fill" placeholder="Comment"></textarea>
+                    
+                        <button type="submit" formacation="/submit">Comment</button>
+                    </form>
+                    
+                </div>
+    
+                <div class="comments">
+                    <% if (locals.comment) { %>
+                        <div>
+                            <h3>Guest</h3>
+                            <p><%= comment %></p>
+                        </div>
+                    <% } else { } %>
+                    <div>
+                        <h3>User23232</h3>
+                        <p>Wow I never suspected that. That's fascinating</p>
+                    </div>
+                    <div>
+                        <h3>User5463565</h3>
+                        <p>Who would have known, your really DO learn new things every day.</p>
+                    </div>
+                    <div>
+                        <h3>User9970</h3>
+                        <p>If only I had known it when I was a child</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+
+<%- include("partials/footer.ejs") %>

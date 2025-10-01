@@ -1,0 +1,61 @@
+<%- include("partials/header.ejs") %>
+<div class="article_making_container"> 
+    
+        <form id="mainForm" action="/upload" method="POST" enctype="multipart/form-data"> 
+            <div>
+                <h1>Write a title of your article:</h1>
+                <%if (locals.title) { %>
+                    <textarea rows="2" cols="25" id="title" class="title" type="text" name="Title" placeholder="Title"><%= title %></textarea>
+                <% } else { %>
+                    <textarea rows="2" cols="25" class="title" type="text" name="Title" placeholder="Title"></textarea>
+                <% } %>
+            </div>
+            <div class="upload_img">
+
+                <h2>Click the button below to upload an image:</h2>
+        
+                <%if (locals.article_img) { %>   
+                    <label for="input_file">File chosen</label>
+                <% } else { %>
+                    <label for="input_file">Choose file</label>
+                <% } %>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input_file" name="input_file" >
+                    <button type="submit">Upload image</button>
+        
+                <h2>The preview of the uploaded image can be seen below: </h2>
+            </div>
+            <div class="new_post_img">
+                <%if (locals.article_img) { %>
+                    <img class="article_making_img"  src="<%= article_img %>" alt="added imaged">
+                <% } else { %>
+                <img class="article_making_img"  src="/images/photo-01 [Converted].png" alt="a drawing of a postarcd with a plus in the right corner. Add image.">
+
+                <% } %>
+            </div>
+        
+            <div>
+                <h2>Start writing your article below</h2>
+                
+                <%if (locals.fill) { %>
+                    <textarea rows="2" cols="25" class="fill" type="text" name="Fill" placeholder="Text"><%= fill  %></textarea>
+                <% } else { %>
+                    <textarea rows="2" cols="25" class="fill" type="text" name="Fill" placeholder="Text"></textarea>  
+                <% } %>
+                
+
+            </div>
+        
+        <div class="submit_article">
+            <button type="submit"  formaction="/submit">Make an article</button>
+        </div>
+        <% if(locals.value == 1){ %>
+            <p class="missing_info">Missing inforamtion. Check if your post has a Title, an image and body. Withouth those components we are unable to create your article.</p>
+        <% } else { null}%>
+            
+   </form>
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
+

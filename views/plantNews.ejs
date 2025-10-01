@@ -1,0 +1,106 @@
+<%- include("partials/header.ejs") %>
+
+
+<h2 class="title_page">Welcome to our news outlet.</h2>
+<h3 class="subtitle_page">As you can see it's pretty quiet here. We are just starting our adventure. Do you want to help us make this place a bit more lived in? Do you want to share your knowladge of plants?  </h3>
+<div class="make_article">
+    <div>
+        <h2>Make your own article!!</h2>
+        <p>All the power is at you fingertips. Click the button below and discover your inner writer and educator. We would love to see what your come up with.</p>
+    </div>
+    <div class="button_div_article">
+        <button class="take_me_article_Making" onclick="location.href='/articleMaking'" style="cursor: pointer;">
+            Make an Article
+        </button>
+    </div>  
+</div>
+
+<h2 class="title_page">Recently added articles</h2>
+<div class="all_articles_container">
+    
+    <%if (locals.title && locals.article_img && locals.fill) { %>
+        <div class="article">
+            <div>
+                <img class="article_img" src="<%= article_img %>" alt="submited img">
+            </div>
+            <div>
+                <h2><%= title %></h2>
+                <p><%= fill  %> </p>
+                <button class="take_me_to_submited_article" onclick="location.href='/newArticle'" style="cursor: pointer;">See more</button>
+            </div>
+        </div>
+
+        <div class="article">
+            <div>
+                <img class="article_img" src="/images/nettle_article.jpg" alt="nettle plant">
+            </div>
+            <div>
+                <h2>The secret of avoiding pain</h2>
+                
+                <p>As we all know nettle is a very usefull plant. Although it's properties are amazing, harvesting it can be quite an issue. </p>
+                <button class="take_me_to_nettle_article" onclick="location.href='/nettleArticle'" style="cursor: pointer;">See more</button>
+            </div>
+            
+        </div>
+    
+        <div class="article">
+            <div>
+                <img class="article_img" src="/images/shameplant.jpg" alt="green plant common name shameplant"></div>
+            <div>
+                <h2>Did you know that plants can be shy?</h2>
+                
+                <p>kawałek tekstu</p>
+                <button class="take_me_to_shy_article" onclick="location.href='/shyPlantArticle'" style="cursor: pointer;" >See more</button>
+            </div>
+        </div>
+        
+        <div class="article">
+            <div>
+                <img class="article_img" src="/images/plant_noise.jpg" alt="green plant common name shameplant"></div>
+            <div>
+                <h2>Plants are louder than you think.</h2>
+              
+                <p>Do plants actualy make noise? Do they speak?</p>
+                <button class="take_me_to_make_noise_article" onclick="location.href='/makeNoiseArticle'" style="cursor: pointer;" >See more</button>
+            </div>
+        </div>
+    <% } else { %>
+    <div class="article">
+        <div>
+            <img class="article_img" src="/images/nettle_article.jpg" alt="nettle plant">
+        </div>
+        <div>
+            <h2>The secret of avoiding pain</h2>
+           
+            <p>As we all know nettle is a very usefull plant. Although it's properties are amazing, harvesting it can be quite an issue. </p>
+            <button class="take_me_to_nettle_article" onclick="location.href='/nettleArticle'" style="cursor: pointer;">See more</button>
+        </div>
+        
+    </div>
+
+    <div class="article">
+        <div>
+            <img class="article_img" src="/images/shameplant.jpg" alt="green plant common name shameplant"></div>
+        <div>
+            <h2>Did you know that plants can be shy?</h2>
+            
+            <p>kawałek tekstu</p>
+            <button class="take_me_to_shy_article" onclick="location.href='/shyPlantArticle'" style="cursor: pointer;" >See more</button>
+        </div>
+    </div>
+    
+    <div class="article">
+        <div>
+            <img class="article_img" src="/images/plant_noise.jpg" alt="green plant common name shameplant"></div>
+        <div>
+            <h2>Plants are louder than you think.</h2>
+            
+            <p>Do plants actualy make noise? Do they speak?</p>
+            <button class="take_me_to_make_noise_article" onclick="location.href='/makeNoiseArticle'" style="cursor: pointer;" >See more</button>
+        </div>
+    </div>
+        
+    <% } %>  
+</div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,46 @@
+<%- include("partials/header.ejs") %>
+<div class="article_container">
+    <% if(locals.article_img && locals.title && locals.fill){ %>
+    <div class="inside_img_container">
+        <img class="inside_img" src="<%= article_img %>" alt="submited img">
+    </div>
+    <div class="inside_content_container">
+        <h2><%=title%></h2>
+    
+        <p><%=fill%></p> 
+</div>
+        <div class="comment_container">
+             
+            <div>
+                <p>Comment as a Guest</p>
+                <textarea rows="2" cols="25" class="comment_textarea" type="text" name="Fill" placeholder="BANANA"></textarea>
+                <button>Comment</button>
+            </div>
+
+            <div class="comments">
+                <% if (locals.comment) { %>
+                    <div>
+                        <h3>Guest</h3>
+                        <p><%= comment %></p>
+                    </div>
+                <% } else { } %>
+                <div>
+                    <h3>User23232</h3>
+                    <p>Wow I never suspected that. That's fascinating</p>
+                </div>
+                <div>
+                    <h3>User5463565</h3>
+                    <p>Who would have known, your really DO learn new things every day.</p>
+                </div>
+                <div>
+                    <h3>User9970</h3>
+                    <p>If only I had known it when I was a child</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% } else{} %>   
+
+ 
+ 
+<%- include("partials/footer.ejs") %>
