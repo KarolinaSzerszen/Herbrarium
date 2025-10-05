@@ -1,67 +1,110 @@
-
 <%- include("partials/header.ejs") %>
 <div class="article_container">
-   <div class="inside_img_container">
-         <img class="inside_img" src="/images/plant_noise.jpg" alt="nettle plant">
+  <div class="inside_img_container">
+    <img class="inside_img" src="/images/plant_noise.jpg" alt="nettle plant" />
+  </div>
+  <div class="inside_content_container">
+    <h2>Plants Are Louder Than You Think: The Secret Sounds of Nature</h2>
+    <p>1.02.2025 J. Jonah Jameson</p>
+
+    <p>
+      When we think of plants, we often imagine quiet, passive life forms gently
+      swaying in the breeze. But what if plants are not as silent as we assume?
+      Recent studies suggest that plants actually produce sounds, especially
+      when they are stressed, thirsty, or damaged. While we can't hear these
+      noises with our own ears, the plant world might be a much noisier place
+      than we ever realized.
+    </p>
+
+    <h3>Plants That "Cry Out" When Stressed</h3>
+
+    <p>
+      Scientists have discovered that when plants experience stress—such as
+      dehydration or injury—they emit high-frequency ultrasonic sounds. In a
+      groundbreaking 2023 study, researchers used sensitive microphones to
+      record the sounds of plants like tomatoes and tobacco. They found that
+      when a plant is cut, it produces bursts of sound, almost as if it were
+      "crying out" in response to the damage. Surprisingly, different types of
+      stress result in different sound patterns. A thirsty plant emits a
+      different type of sound than a freshly cut leaf. This means that plants
+      may have their own hidden language, one that is too high-pitched for human
+      ears but possibly detectable by insects and other animals.
+    </p>
+
+    <h3>How Do Plants Make Noise?</h3>
+    <p>
+      Unlike animals, plants don't have vocal cords—but they still manage to
+      create sound. The leading theory suggests that these noises come from
+      cavitation: tiny air bubbles forming and bursting inside the plant’s
+      vascular system. When a plant experiences drought or damage, air bubbles
+      get trapped in the xylem (the tissue that transports water), leading to
+      sudden bursts of sound.
+    </p>
+    <h3>Who Listens to Plant Noises?</h3>
+    <p>
+      Even though humans can't hear these ultrasonic cries, some creatures might
+      be able to. Bats, rodents, and certain insects can detect high-frequency
+      sounds, which could help them determine which plants are healthy and which
+      ones are under stress. Imagine a caterpillar choosing between two
+      leaves—one that is silently thriving and another that is "crying" out in
+      distress. Could insects be listening in? Some scientists think so.
+    </p>
+    <h3>Implications for Agriculture and Conservation</h3>
+    <p>
+      The discovery that plants make sounds could revolutionize farming. Farmers
+      could use special sensors to "listen" to crops and detect when they need
+      water long before visible signs of drought appear. This could prevent
+      overwatering, reduce waste, and help ensure better crop yields. Similarly,
+      scientists could use sound detection to monitor forests and ecosystems,
+      identifying stressed plants before they visibly deteriorate.
+    </p>
+    <h3>The Noisy World of Plants</h3>
+
+    <p>
+      Plants may not "scream" in the way we imagine, but they do
+      communicate—just not in a way we can naturally hear. Thanks to modern
+      technology, we are now beginning to uncover the hidden noises of nature.
+      Next time you take a walk in the forest or tend to your garden, remember:
+      plants might be louder than you think.
+    </p>
+  </div>
+  <div class="comment_container">
+    <div>
+      <p>Comment as a Guest</p>
+      <form method="post" action="/makeNoiseArticle/comment">
+        <textarea
+          rows="2"
+          cols="25"
+          class="comment_textarea"
+          type="text"
+          name="Fill"
+          placeholder="Make a comment"
+        ></textarea>
+        <button>Comment</button>
+      </form>
     </div>
-    <div class="inside_content_container">
 
-      
-        <h2>Plants Are Louder Than You Think: The Secret Sounds of Nature</h2>
-        <p>1.02.2025 J. Jonah Jameson</p>
-    
-        <p>When we think of plants, we often imagine quiet, passive life forms gently swaying in the breeze. But what if plants are not as silent as we assume? Recent studies suggest that plants actually produce sounds, especially when they are stressed, thirsty, or damaged. While we can't hear these noises with our own ears, the plant world might be a much noisier place than we ever realized. </p>
-    
-
-        <h3>Plants That "Cry Out" When Stressed</h3>
-
-        <p>Scientists have discovered that when plants experience stress—such as dehydration or injury—they emit high-frequency ultrasonic sounds. In a groundbreaking 2023 study, researchers used sensitive microphones to record the sounds of plants like tomatoes and tobacco. They found that when a plant is cut, it produces bursts of sound, almost as if it were "crying out" in response to the damage.
-            Surprisingly, different types of stress result in different sound patterns. A thirsty plant emits a different type of sound than a freshly cut leaf. This means that plants may have their own hidden language, one that is too high-pitched for human ears but possibly detectable by insects and other animals.</p>
-      
-        <h3>How Do Plants Make Noise?</h3>
-        <p>Unlike animals, plants don't have vocal cords—but they still manage to create sound. The leading theory suggests that these noises come from cavitation: tiny air bubbles forming and bursting inside the plant’s vascular system. When a plant experiences drought or damage, air bubbles get trapped in the xylem (the tissue that transports water), leading to sudden bursts of sound.</p>
-        <h3>Who Listens to Plant Noises?</h3>
-        <p>Even though humans can't hear these ultrasonic cries, some creatures might be able to. Bats, rodents, and certain insects can detect high-frequency sounds, which could help them determine which plants are healthy and which ones are under stress. Imagine a caterpillar choosing between two leaves—one that is silently thriving and another that is "crying" out in distress. Could insects be listening in? Some scientists think so.</p>
-        <h3>Implications for Agriculture and Conservation</h3>
-        <p>The discovery that plants make sounds could revolutionize farming. Farmers could use special sensors to "listen" to crops and detect when they need water long before visible signs of drought appear. This could prevent overwatering, reduce waste, and help ensure better crop yields.
-
-            Similarly, scientists could use sound detection to monitor forests and ecosystems, identifying stressed plants before they visibly deteriorate.</p>
-        <h3>The Noisy World of Plants</h3>
-
-        <p>Plants may not "scream" in the way we imagine, but they do communicate—just not in a way we can naturally hear. Thanks to modern technology, we are now beginning to uncover the hidden noises of nature. Next time you take a walk in the forest or tend to your garden, remember: plants might be louder than you think.</p>
-
-            
- </div>           
-        <div class="comment_container">
-             
-            <div>
-                <p>Comment as a Guest</p>
-                <textarea rows="2" cols="25" class="comment_textarea" type="text" name="Fill" placeholder="BANANA"></textarea>
-                <button>Comment</button>
-            </div>
-
-            <div class="comments">
-                <% if (locals.comment) { %>
-                    <div>
-                        <h3>Guest</h3>
-                        <p><%= comment %></p>
-                    </div>
-                <% } else { } %>
-                <div>
-                    <h3>User23232</h3>
-                    <p>Wow I never suspected that. That's fascinating</p>
-                </div>
-                <div>
-                    <h3>User5463565</h3>
-                    <p>Who would have known, your really DO learn new things every day.</p>
-                </div>
-                <div>
-                    <h3>User9970</h3>
-                    <p>If only I had known it when I was a child</p>
-                </div>
-            </div>
-        </div>
+    <div class="comments">
+      <% if (locals.comment) { %>
+      <div>
+        <h3>Guest</h3>
+        <p><%= comment %></p>
+      </div>
+      <% } else { } %>
+      <div>
+        <h3>User23232</h3>
+        <p>Wow I never suspected that. That's fascinating</p>
+      </div>
+      <div>
+        <h3>User5463565</h3>
+        <p>Who would have known, your really DO learn new things every day.</p>
+      </div>
+      <div>
+        <h3>User9970</h3>
+        <p>If only I had known it when I was a child</p>
+      </div>
     </div>
-    
+  </div>
+</div>
 
 <%- include("partials/footer.ejs") %>

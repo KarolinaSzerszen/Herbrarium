@@ -1,42 +1,75 @@
 <%- include("partials/header.ejs") %>
 <div class="main_body">
-    <div class ="main_image">
-        <img class = "succulents" src = "/images/main_photo.jpg" alt="succulents">
-         <h1>Herbrarium</h1>
-         </div>
+  <div class="main_image">
+    <img class="succulents" src="/images/main_photo.jpg" alt="succulents" />
+    <h1>Herbrarium</h1>
+  </div>
+  <div class="offer-section">
     <h2>What do we offer?</h2>
-    <div class="offers" >
-            
-        <div class="plant_archive" onclick="location.href='/plantArchive'" style="cursor: pointer;"> 
-            <img class="offer_icon" src="/images/bookshelf.png" alt="icon of a bookshelf">
-                <h3>Plant archive</h3>
-                <p>Look up flower based information in our vast library of flowers</p>
-        </div>
-        
+    <div class="offers">
+      <div
+        class="plant_archive"
+        onclick="location.href='/plantArchive'"
+        style="cursor: pointer"
+      >
+        <img
+          class="offer_icon"
+          src="/images/bookshelf.png"
+          alt="icon of a bookshelf"
+        />
+        <h3>Plant archive</h3>
+        <p>Look up flower based information in our vast library of flowers</p>
+      </div>
 
-        <div class="plantNews" onclick="location.href='/plantNews'" style="cursor: pointer;">
-            <img class="offer_icon" src="/images/open-book.png" alt="icon of a bookshelf">
-            <h3>Plant news</h3>
-            <p>Gain knowladge on plants, discover interresting facts. Ssk question; and educate yourself.</p>
-        </div>
+      <div
+        class="plantNews"
+        onclick="location.href='/plantNews'"
+        style="cursor: pointer"
+      >
+        <img
+          class="offer_icon"
+          src="/images/open-book.png"
+          alt="icon of a bookshelf"
+        />
+        <h3>Plant news</h3>
+        <p>
+          Gain knowladge on plants, discover interresting facts. Ssk question;
+          and educate yourself.
+        </p>
+      </div>
 
-      <div class = "forum" onclick="location.href='/forum'" style="cursor: pointer;">
-            <img class="offer_icon" src="/images/bubble-chat.png" alt="icon of a chat">
-            <h3>Point of contact</h3>
-            <p>Contact the creators. Watch as your ideas become reality.</p>
-        </div>
+      <div
+        class="forum"
+        onclick="location.href='/forum'"
+        style="cursor: pointer"
+      >
+        <img
+          class="offer_icon"
+          src="/images/bubble-chat.png"
+          alt="icon of a chat"
+        />
+        <h3>Point of contact</h3>
+        <p>Contact the creators. Watch as your ideas become reality.</p>
+      </div>
     </div>
+  </div>
 
-
-    <div class="about">
-        <div> 
-            <img class="about_plant" src = "/images/little_plant.jpg" alt="little plant">
-        </div>
-        <div class = "about_text">
-            <h2>About Us</h2>
-            <h3>We are a passionate group of plant enthusiasts dedicated to sharing our love for greenery with the world. Whether you're a seasoned gardener or just starting your plant journey, we're here to inspire, educate and grow together. Through our shred knowledge, experiences, and a deep appreciation for nature, we aim to build a thriving community where everyone can discover the joy of plants. </h3>
-        </div>
+  <div class="about">
+    <div class="about_text">
+      <h2>About Us</h2>
+      <h3>
+        We are a passionate group of plant enthusiasts dedicated to sharing our
+        love for greenery with the world. Whether you're a seasoned gardener or
+        just starting your plant journey, we're here to inspire, educate and
+        grow together. Through our shared knowledge, experiences, and a deep
+        appreciation for nature, we aim to build a thriving community where
+        everyone can discover the joy of plants.
+      </h3>
     </div>
+    <div class="about-img">
+      <%- include ("../public/images/about_us.svg") %>
+    </div>
+  </div>
 </div>
 
 <%- include("partials/footer.ejs") %>
