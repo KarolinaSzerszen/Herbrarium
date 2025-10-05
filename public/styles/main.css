@@ -61,7 +61,6 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   height: 100vh;
 }
 .main_image h1 {
@@ -86,6 +85,7 @@ footer ul {
   background-repeat: no-repeat;
   width: 100%; /* Viewport width */
   /* Viewport height */
+  height: 100%;
   object-fit: cover;
 }
 .offer-section {
@@ -686,6 +686,27 @@ textarea {
 
     font-size: 1rem;
   }
+
+  /*                                     ABOUT PAGE                          */
+
+  .about_info {
+    margin: 3% 8%;
+  }
+
+  .about-questions {
+    width: 50%;
+  }
+  .about-response {
+    width: 50%;
+  }
+
+  .about_info h3 {
+    font-size: 1.6rem;
+  }
+
+  .about_info p {
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (max-width: 992px) {
   .offer-section h2 {
@@ -808,6 +829,18 @@ textarea {
 
     font-size: 0.8rem;
   }
+  label {
+    width: 20vw;
+  }
+  /* ABOUT PAGE */
+
+  .about_info h3,
+  .about_info p {
+    font-size: 1.2rem;
+  }
+  .about_info p {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -819,9 +852,7 @@ textarea {
     top: 58%;
     color: hsl(0, 0%, 80%);
   }
-  .succulents {
-    height: 100vh;
-  }
+
   .main_body h2 {
     font-size: 2.2rem;
   }
@@ -987,6 +1018,21 @@ textarea {
   }
   .submit_article button {
     width: 80%;
+  }
+  label {
+    width: 30vw;
+  }
+  .about_info {
+    flex-direction: column;
+    gap: 10%;
+  }
+
+  .about_info h3,
+  .about_info p {
+    font-size: 1rem;
+  }
+  .about_info div {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 362px) {
