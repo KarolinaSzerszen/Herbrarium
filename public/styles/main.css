@@ -108,8 +108,8 @@ footer ul {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.3);
-  width: 40vh;
-  height: 40vh;
+  width: 45vh;
+  height: 45vh;
   text-align: center;
   justify-content: flex-start;
 }
@@ -123,11 +123,11 @@ p {
   margin-right: 50px;
 }
 .offers p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .offers h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1%;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 .offer_icon {
   display: block;
@@ -162,7 +162,7 @@ p {
   font-size: 1.8rem;
   font-weight: lighter;
 }
-.about-img svg {
+.about-img img {
   width: 24vw;
   height: 24vw;
   object-fit: fill;
@@ -306,7 +306,7 @@ p {
 .make-article-img {
   width: 45%;
 }
-.make-article-img svg {
+.make-article-img img {
   width: 300px;
   height: 300px;
 }
@@ -689,8 +689,8 @@ textarea {
     margin: 8% 0;
   }
   .offers div {
-    width: 30vh;
-    height: 30vh;
+    width: 40vh;
+    height: 40vh;
   }
   .offers {
     gap: 1.4vh;
@@ -711,10 +711,13 @@ textarea {
     font-size: 1rem;
     margin: 2% 6%;
   }
-  .make-article-img svg {
+  .make-article-img img {
     display: none;
   }
-
+  .about-img {
+    display: flex;
+    align-items: center;
+  }
   .make-article-container {
     display: block;
   }
@@ -782,8 +785,8 @@ textarea {
     margin: 16% 0;
   }
   .offers div {
-    width: 20vh;
-    height: 20vh;
+    width: 30vh;
+    height: 30vh;
   }
   .offers {
     gap: 1.4vh;
@@ -813,7 +816,7 @@ textarea {
     width: 100%;
     height: auto;
   }
-  .about-img svg {
+  .about-img img {
     margin-left: 35%;
   }
   .about_text h3 {
