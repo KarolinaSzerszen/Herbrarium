@@ -61,7 +61,8 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: -73px;
+
+  height: 100vh;
 }
 .main_image h1 {
   position: absolute;
@@ -84,7 +85,7 @@ footer ul {
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
   width: 100%; /* Viewport width */
-  height: 110vh; /* Viewport height */
+  /* Viewport height */
   object-fit: cover;
 }
 .offer-section {
@@ -324,8 +325,10 @@ p {
 .make-article-top {
   background-color: rgba(198, 218, 182, 0.3);
 }
-.make-article h2 {
+
+.make-article h3 {
   text-align: center;
+  font-size: 1.4rem;
 }
 .make-article p {
   font-size: 1.4rem;
@@ -474,18 +477,21 @@ p {
 }
 .comment_container {
   width: 100%;
-  background-color: #9cce8f !important;
+  background-color: rgba(198, 218, 182, 0.3);
 }
 
-.comment_container div {
-  padding: 0.5%;
-  background-color: white;
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 8vh;
+  background-color: rgba(198, 218, 182, 0.3);
   width: 96%;
   margin: 5% 2%;
-}
-.comments {
   height: fit-content;
-  background-color: #9cce8f !important;
+}
+.comments div {
+  margin: 0%;
+  background-color: white;
 }
 .comment_container h3 {
   font-size: 1.4rem;
@@ -724,6 +730,9 @@ textarea {
   .make-article {
     width: 100%;
   }
+  .make-article h3 {
+    font-size: 1.2rem;
+  }
   .about_text h3 {
     margin-top: 6%;
     text-align: justify;
@@ -763,6 +772,41 @@ textarea {
     height: 32vh;
     width: 70%;
     min-width: 400px;
+  }
+
+  /* inside of the article */
+
+  .inside_content_container h2 {
+    font-size: 1.9rem;
+  }
+
+  .inside_content_container h3 {
+    font-size: 1.4rem;
+  }
+
+  .inside_content_container ul,
+  .inside_content_container ol,
+  .inside_content_container p {
+    font-size: 1.2rem;
+  }
+
+  .comment_container h3,
+  .comment_container p {
+    font-size: 1rem;
+  }
+
+  /* hmmmmm: */
+  .leave_a_comment textarea {
+    font-size: 1rem;
+  }
+
+  /* hmmmm^^^ */
+  .leave_a_comment button {
+    margin-left: 75%;
+    width: 20%;
+    height: 3vh;
+
+    font-size: 0.8rem;
   }
 }
 
@@ -842,6 +886,8 @@ textarea {
 
   .title-container {
     flex-direction: column;
+    gap: 6vh;
+    margin-bottom: 6vh;
   }
   .title-container div {
     width: 100%;
@@ -851,8 +897,17 @@ textarea {
     height: 30vh;
   }
   .title-page h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
+  .subtitle-page h3,
+  .make-article-top h2 {
+    font-size: 1rem;
+  }
+  .make-article p {
+    font-size: 0.9rem;
+    margin: 5% 5%;
+  }
+
   .subtitle-page {
     margin: 0;
   }
@@ -862,14 +917,112 @@ textarea {
 
   .make-article {
     width: 100%;
+    margin-bottom: 8%;
   }
 
   .make-article button {
     font-size: 2.2vw;
   }
   .article {
-    height: 32vh;
-    width: 46%;
-    min-width: 300px;
+    height: 22vh;
+    width: 80%;
+    min-width: 200px;
+  }
+  .title-page-articles {
+    font-size: 1.3rem;
+  }
+  .side-part-article h2 {
+    font-size: 1rem;
+  }
+  .side-part-article p {
+    font-size: 0.8rem;
+  }
+  .side-part-article button {
+    font-size: 0.8rem;
+  }
+
+  /* inside of the article */
+
+  .inside_content_container h2 {
+    font-size: 2rem;
+  }
+
+  .inside_content_container h3 {
+    font-size: 1.4rem;
+  }
+
+  .inside_content_container ul,
+  .inside_content_container ol,
+  .inside_content_container p {
+    font-size: 1.2rem;
+  }
+
+  .comment_container h3,
+  .comment_container p {
+    font-size: 1rem;
+  }
+
+  /* hmmmmm: */
+  .leave_a_comment textarea {
+    font-size: 1rem;
+  }
+
+  /* hmmmm^^^ */
+  .leave_a_comment button {
+    margin-left: 75%;
+    width: 20%;
+    height: 3vh;
+
+    font-size: 0.8rem;
+  }
+  /* Aticle form */
+  .article_making_container {
+    margin: 0 0;
+  }
+  .article_making_container h1 {
+    font-size: 1.2rem;
+  }
+  .article_making_container h2 {
+    font-size: 1rem;
+  }
+  .submit_article button {
+    width: 80%;
   }
 }
+@media only screen and (max-width: 362px) {
+  .article {
+    flex-direction: column;
+    height: 48vh;
+    width: 80%;
+    min-width: 100px;
+    gap: 0;
+  }
+
+  .title-page-articles {
+    font-size: 1.3rem;
+  }
+  .side-part-article h2 {
+    font-size: 1rem;
+  }
+  .side-part-article p {
+    font-size: 0.8rem;
+  }
+  .side-part-article button {
+    margin-top: 10%;
+    height: 4vh;
+    font-size: 0.8rem;
+    width: 60%;
+    right: 9%;
+  }
+  .article div {
+    width: 100%;
+  }
+  .article_img {
+    height: 26vh;
+  }
+  .make-article h3 {
+    font-size: 1rem;
+  }
+}
+
+/* rgba(198, 218, 182, 0.3); */
